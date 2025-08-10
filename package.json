@@ -1,32 +1,41 @@
 {
-  "license": "0BSD",
-  "main": "index.js",
-  "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
-  },
-  "dependencies": {
-    "expo": "~53.0.20",
-    "expo-status-bar": "~2.2.3",
-    "react": "19.0.0",
-    "react-native": "0.79.5",
-    "expo-sharing": "~13.1.5",
-    "expo-location": "~18.1.6",
-    "expo-clipboard": "~7.1.5",
-    "expo-file-system": "~18.1.11",
-    "react-native-svg": "15.11.2",
-    "@expo/vector-icons": "^14.1.0",
-    "react-native-paper": "4.9.2",
-    "react-native-calendars": "*",
-    "react-native-chart-kit": "*",
-    "react-native-safe-area-context": "5.4.0",
-    "@react-native-community/datetimepicker": "8.4.1",
-    "@react-native-async-storage/async-storage": "2.1.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.20.0"
-  },
-  "private": true
+  "expo": {
+    "name": "migren-2",
+    "slug": "migren-2",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.eray.migren2"
+    },
+    "android": {
+      "package": "com.eray.migren2",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "sdkVersion": "53.0.0",
+    "platforms": ["ios", "android"],
+    "extra": {
+      "eas": {
+        "projectId": "b48bbfec-9b01-4a97-a574-54b795d38d3c"
+      }
+    },
+    "cli": {
+      "appVersionSource": "local"
+    }
+  }
 }
