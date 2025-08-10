@@ -28,14 +28,14 @@
       "favicon": "./assets/favicon.png"
     },
     "sdkVersion": "53.0.0",
-    "platforms": [
-      "ios",
-      "android"
-    ],
+    "platforms": ["ios","android"],
     "extra": {
       "eas": {
         "projectId": "b48bbfec-9b01-4a97-a574-54b795d38d3c"
       }
+    },
+    "cli": {
+      "appVersionSource": "local"
     }
   }
 }
